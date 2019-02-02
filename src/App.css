@@ -31,15 +31,6 @@
   color: #bbb5c3;
   font-size: 1em;
 }
-
-.pagination-button {
-  transition: all 280ms ease-in;
-  border: none;
-  padding: 10px 20px;
-  background-color: white;
-  color: #bbb5c3;
-  font-size: 1em;
-}
 .pagination-button[disabled] {
   opacity: .5;
   background-color: lightgray;
@@ -58,6 +49,12 @@
 .pagination-button.active {
   background-color: #039be5;
   color: white;
+}
+
+@media(max-width: 639px) {
+  .pagination-button:not(.active):not(:first-child):not(:last-child) {
+    display: none;
+  }
 }
 
 .feedback-container {
