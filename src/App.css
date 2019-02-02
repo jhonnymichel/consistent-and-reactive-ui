@@ -1,0 +1,193 @@
+
+.app-container {
+  padding: 10px;
+  width: 100%;
+  min-height: 100vh;
+  overflow: auto;
+  background-color: #eeeeee;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+.app-container.loading {
+  justify-content: center;
+}
+
+.pagination {
+  flex-shrink: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.pagination-button {
+  transition: all 280ms ease-in;
+  border: none;
+  padding: 10px 20px;
+  background-color: white;
+  color: #bbb5c3;
+  font-size: 1em;
+}
+
+.pagination-button {
+  transition: all 280ms ease-in;
+  border: none;
+  padding: 10px 20px;
+  background-color: white;
+  color: #bbb5c3;
+  font-size: 1em;
+}
+.pagination-button[disabled] {
+  opacity: .5;
+  background-color: lightgray;
+}
+.pagination-button:hover {
+  background-color: #b3e5fc;
+}
+.pagination-button:first-child {
+  border-radius: 8px 0px 0px 8px;
+  padding: 5px 15px;
+}
+.pagination-button:last-child {
+  border-radius:  0px 8px 8px 0px;
+  padding: 5px 15px;
+}
+.pagination-button.active {
+  background-color: #039be5;
+  color: white;
+}
+
+.feedback-container {
+  flex-shrink: 0;
+  width: 100%;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.feedback-container.big {
+  height: auto;
+}
+
+.error {
+  display: flex;
+  justify-content: center;
+  color: #d32f2f;
+  font-size: 1.2em;
+}
+.error-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.error i {
+  padding-right: 10px;
+}
+
+.error button {
+  margin-top: 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+  padding: 20px;
+  font-size: .8em;
+  color: #616161;
+}
+
+.history-item {
+  flex-shrink: 0;
+  font-size: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  list-style: none;
+  padding: 20px;
+  border-bottom: lightgray 1px solid;
+  width: 100%;
+}
+.history-item--date {
+  color: lightgray;
+}
+.history-item--number {
+  display: flex;
+  align-items: center;
+  font-size: 1em;
+  color: #616161;
+}
+
+
+.call_missed,
+.call_missed_outgoing,
+.call_made,
+.call_received {
+  font-size: 1em;
+  margin-right: 10px;
+}
+
+.call_missed, .call_missed_outgoing {
+  color: #d32f2f;
+}
+
+.call_made, .call_received {
+  color: #8bc34a;
+}
+
+.lds-ellipsis {
+  flex-shrink: 0;
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+.lds-ellipsis div {
+  position: absolute;
+  top: 27px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: #039be5;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+  left: 6px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+  left: 6px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+  left: 26px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+  left: 45px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(19px, 0);
+  }
+}
