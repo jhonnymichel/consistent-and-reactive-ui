@@ -1,6 +1,18 @@
 import queryString from 'query-string';
-window.queryString = queryString;
+
+/* ----------------------------------------------------------------------- */
+/* THERE IS A LOT OF MOCKING IN THIS FILE. JUMP TO LINE 80ish TO SKIP THEM */
+/* ----------------------------------------------------------------------- */
+
+window.networkConditions = {
+  offline: false,
+  serverIntermitent: false,
+  latency: 400,
+};
+
+/* ----------------------------------------------------------------------- */
 /* THIS IS THE DATA MOCK. THERE IS NO REAL API. I'M SO SORRY  */
+/* ----------------------------------------------------------------------- */
 
 const data = new Array(100).fill().map((_, i) => ({
   to: String(Math.random()).substring(2, 12),
@@ -16,15 +28,11 @@ const data = new Array(100).fill().map((_, i) => ({
 const perPage = 10;
 const totalPages = data.length / perPage;
 
-window.networkConditions = {
-  offline: false,
-  serverIntermitent: false,
-  latency: 400,
-};
 
-/* I'M MOCKING FETCH AS WELL. fetch-mock WOULDNT HANDLE QUERY PARAMS
-   THE WAY I NEEDED. DIDNT BOTHER LOOKING FOR OTHER OPTIONS */
-
+/* ---------------------------------------------------------------------- */
+/*   I'M MOCKING FETCH AS WELL. fetch-mock WOULDNT HANDLE QUERY PARAMS    */
+/*      THE WAY I NEEDED. DIDNT BOTHER LOOKING FOR OTHER OPTIONS          */
+/* ---------------------------------------------------------------------- */
 
 const fetch = (url) => new Promise((resolve, reject) => {
   if (!url.startsWith('https://api.fakevox.com/callhistory')) {
@@ -83,7 +91,7 @@ export default {
       if (!response.ok) {
         const error = await response.json();
         // here, I know that the error response has a message property.
-        // you need to know how to handle the errors the service returns.
+        // you need to learn how to handle the errors the service returns.
         throw new APIResponseError(error.message);
       }
 
@@ -96,7 +104,7 @@ export default {
 
       // fetch only throws TypeError: Failed to fetch.
       // either the URL was not resolved by any DNS or
-      // the client has connection problem. You know
+      // the client has a connection problem. You know
       // the service exists (otherwise why would you be expecting to use it?)
       // so it's probably a problem in the client
       throw new Error(
