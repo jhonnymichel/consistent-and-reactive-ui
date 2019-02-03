@@ -2,7 +2,7 @@
   "name": "consistent-and-reactive-ui",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://jhonnymichel.github.io/consistent-and-reactive-ui",
+  "homepage": "https://github.com/jhonnymichel/consistent-and-reactive-ui",
   "dependencies": {
     "classnames": "^2.2.6",
     "fetch-mock": "^7.3.0",
