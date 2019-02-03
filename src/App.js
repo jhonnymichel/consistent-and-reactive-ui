@@ -41,9 +41,11 @@ class App extends React.Component {
           { ...callHistory.pagination }
         />
         <ResourceStatus callHistory={callHistory} />
-        {callHistory.data.map((item) => (
-          <HistoryItem key={item.to} { ...item } />
-        ))}
+        <ul className="history-container">
+          {callHistory.data.map((item) => (
+            <HistoryItem key={item.to} { ...item } />
+          ))}
+        </ul>
       </div>
     );
   }

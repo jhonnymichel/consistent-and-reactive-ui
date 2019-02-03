@@ -94,6 +94,12 @@
   color: #616161;
 }
 
+.history-container {
+  margin: 0px;
+  padding: 10px;
+  width: 100%;
+  max-width: 960px;
+}
 .history-item {
   flex-shrink: 0;
   font-size: 1em;
