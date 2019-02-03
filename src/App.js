@@ -17,6 +17,7 @@ class App extends React.Component {
   changePage = (page) => {
     this.props.getCallHistory(page);
   }
+  
   renderInitialState() {
     const { callHistory } = this.props;
 
@@ -30,6 +31,7 @@ class App extends React.Component {
       </div>
     );
   }
+  
   renderApp() {
     const { callHistory } = this.props;
 
