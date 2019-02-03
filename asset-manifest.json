@@ -1,16 +1,16 @@
 {
-  "main.css": "/consistent-and-reactive-ui/static/css/main.fd525185.chunk.css",
-  "main.js": "/consistent-and-reactive-ui/static/js/main.9471474e.chunk.js",
-  "main.js.map": "/consistent-and-reactive-ui/static/js/main.9471474e.chunk.js.map",
+  "main.css": "/consistent-and-reactive-ui/static/css/main.19e00972.chunk.css",
+  "main.js": "/consistent-and-reactive-ui/static/js/main.308d72a4.chunk.js",
+  "main.js.map": "/consistent-and-reactive-ui/static/js/main.308d72a4.chunk.js.map",
   "static/css/1.be2f8269.chunk.css": "/consistent-and-reactive-ui/static/css/1.be2f8269.chunk.css",
   "static/js/1.fdff8b5b.chunk.js": "/consistent-and-reactive-ui/static/js/1.fdff8b5b.chunk.js",
   "static/js/1.fdff8b5b.chunk.js.map": "/consistent-and-reactive-ui/static/js/1.fdff8b5b.chunk.js.map",
   "runtime~main.js": "/consistent-and-reactive-ui/static/js/runtime~main.99300bce.js",
   "runtime~main.js.map": "/consistent-and-reactive-ui/static/js/runtime~main.99300bce.js.map",
   "static/media/material-icons.css": "/consistent-and-reactive-ui/static/media/MaterialIcons-Regular.d41ae58d.ttf",
+  "static/css/main.19e00972.chunk.css.map": "/consistent-and-reactive-ui/static/css/main.19e00972.chunk.css.map",
   "static/css/1.be2f8269.chunk.css.map": "/consistent-and-reactive-ui/static/css/1.be2f8269.chunk.css.map",
-  "static/css/main.fd525185.chunk.css.map": "/consistent-and-reactive-ui/static/css/main.fd525185.chunk.css.map",
   "index.html": "/consistent-and-reactive-ui/index.html",
-  "precache-manifest.e98033774e482c3fb6cff506f833d856.js": "/consistent-and-reactive-ui/precache-manifest.e98033774e482c3fb6cff506f833d856.js",
+  "precache-manifest.ef3b9f37710d1ac31c6d7509ab99c86d.js": "/consistent-and-reactive-ui/precache-manifest.ef3b9f37710d1ac31c6d7509ab99c86d.js",
   "service-worker.js": "/consistent-and-reactive-ui/service-worker.js"
 }
