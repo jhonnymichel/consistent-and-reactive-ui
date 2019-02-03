@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/consistent-and-reactive-ui/precache-manifest.ef3b9f37710d1ac31c6d7509ab99c86d.js"
+  "/jhonnymichel/consistent-and-reactive-ui/precache-manifest.0e63903f82a51a6414cf3e28a3ffbfc6.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/consistent-and-reactive-ui/index.html", {
+workbox.routing.registerNavigationRoute("/jhonnymichel/consistent-and-reactive-ui/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
